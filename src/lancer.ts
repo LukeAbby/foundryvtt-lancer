@@ -273,7 +273,7 @@ Hooks.once("init", () => {
 
   // ------------------------------------------------------------------------
   // Sliding HUD Zone, including accuracy/difficulty window
-  Hooks.on("renderHeadsUpDisplay", slidingHUD.attach);
+  Hooks.on("renderHeadsUpDisplayContainer", slidingHUD.attach);
 
   // Combat tracker HUD modules integration
   if (game.modules!.get("combat-tracker-dock")?.active) {
